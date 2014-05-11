@@ -10,7 +10,9 @@
     "express": "3.2.1",
     "ejs": "*",
     "less-middleware": "*",
-    "socket.io": "*"
+    "socket.io": "*",
+	"passport": "*",
+	"passport-azure-ad": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
