@@ -73,6 +73,7 @@ passport.deserializeUser(function (id, done) {
 	});
 });
 
+
 var wsfedStrategy = new wsfedsaml2({
 		realm: process.env.ActiveDirectoryRealm,
 		identityProviderUrl: process.env.ActiveDirectoryIdentityProviderUrl,
