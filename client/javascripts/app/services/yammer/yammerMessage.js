@@ -117,7 +117,7 @@
 		if (message.liked_by) {
 			$.each(message.liked_by.names, function(index, value) {
 				if (value.user_id != meta.current_user_id)
-					likedByUsers.push({ Id: value.user_id, Name: value.full_name, ProfileUrl: value.permalink });
+					likedByUsers.push(yammerMessage.getUserById(value.user_id, references));
 			});
 		}
 		var links = [], images = [], modules = [];
